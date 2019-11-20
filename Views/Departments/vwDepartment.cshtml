@@ -1,0 +1,42 @@
+﻿@model List<Kompanija.Models.Department>
+
+@{
+    ViewBag.Title = "vwDepartment";
+}
+
+<h2>vwDepartment</h2>
+
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 5px;
+        text-align: left;
+    }
+</style>
+
+
+
+@foreach (var m in Model)
+{
+
+    <table>
+        <tr>
+            <th>departmentNo</th>
+            <th>departmentDescription</th>
+
+        </tr>
+        <tr>
+            <td>@m.departmentNo</td>
+            <td>@m.departmentName @m.departmentLocation</td>
+
+        </tr>
+
+    </table>
+
+
+}
+

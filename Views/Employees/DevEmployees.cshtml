@@ -1,0 +1,16 @@
+﻿@model List<Kompanija.Models.Employee>
+@{
+    ViewBag.Title = "DevEmployees";
+}
+
+<h2>Development employees</h2>
+
+
+@foreach (var m in Model)
+{
+
+    <p> @m.Department.departmentLocation : @m.EmployeeName </p>
+
+
+}
+

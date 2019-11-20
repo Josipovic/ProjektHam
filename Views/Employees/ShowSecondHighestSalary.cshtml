@@ -1,0 +1,12 @@
+﻿@model List<Kompanija.Models.Employee>
+@{
+    ViewBag.Title = "ShowSecondHighestSalary";
+}
+
+<h2>Second highest salary</h2>
+
+@foreach (var m in Model)
+{
+
+    <p>@m.EmployeeName: @m.salary</p>
+}
